@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — MD. Tarek Bepary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="home.html" class="logo">Portfolio.</a>
+        <nav class="navbar">
+            <a href="home.html"      style="--i:1;">Home</a>
+            <a href="about.html"     style="--i:2;">About</a>
+            <a href="skills.html"    style="--i:3;">Skills</a>
+            <a href="portfolio.html" style="--i:4;" class="active">Portfolio</a>
+            <a href="contact.html"   style="--i:5;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="portfolio">
+        <div class="section-heading">
+            <h2>My <span>Portfolio</span></h2>
+            <p>A selection of projects I've built and contributed to</p>
+            <div class="heading-line"></div>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="cpp">C++ / C</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="algo">Algorithms</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+
+            <!-- Project 1 -->
+            <div class="portfolio-card" data-category="cpp">
+                <div class="card-img-placeholder">⚙️</div>
+                <div class="card-body">
+                    <div class="card-tags">
+                        <span class="card-tag">C++</span>
+                        <span class="card-tag">OOP</span>
+                    </div>
+                    <h3>Student Management System</h3>
+                    <p>A console-based student record system using OOP principles — add, search, update, and delete student records with file persistence.</p>
+                    <div class="card-links">
+                        <a href="#" class="card-link primary">
+                            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub
+                        </a>
+                        <a href="#" class="card-link secondary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio-card" data-category="algo">
+                <div class="card-img-placeholder">🧮</div>
+                <div class="card-body">
+                    <div class="card-tags">
+                        <span class="card-tag">C++</span>
+                        <span class="card-tag">Algorithms</span>
+                        <span class="card-tag">DSA</span>
+                    </div>
+                    <h3>Sorting Algorithm Visualizer</h3>
+                    <p>Visual comparison of sorting algorithms (Bubble, Quick, Merge, Heap) with step-by-step execution and time complexity analysis.</p>
+                    <div class="card-links">
+                        <a href="#" class="card-link primary">
+                            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub
+                        </a>
+                        <a href="#" class="card-link secondary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="portfolio-card" data-category="web">
+                <div class="card-img-placeholder">🌐</div>
+                <div class="card-body">
+                    <div class="card-tags">
+                        <span class="card-tag">HTML</span>
+                        <span class="card-tag">CSS</span>
+                        <span class="card-tag">JS</span>
+                    </div>
+                    <h3>Animated Portfolio Website</h3>
+                    <p>A fully responsive animated personal portfolio website with smooth CSS animations, gradient effects, and a mobile-first layout.</p>
+                    <div class="card-links">
+                        <a href="#" class="card-link primary">
+                            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub
+                        </a>
+                        <a href="#" class="card-link secondary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="portfolio-card" data-category="cpp">
+                <div class="card-img-placeholder">🏦</div>
+                <div class="card-body">
+                    <div class="card-tags">
+                        <span class="card-tag">C++</span>
+                        <span class="card-tag">File I/O</span>
+                        <span class="card-tag">OOP</span>
+                    </div>
+                    <h3>Bank Management System</h3>
+                    <p>Full-featured banking system with account creation, deposit/withdrawal, transfer, and transaction history — built in C++ with file-based storage.</p>
+                    <div class="card-links">
+                        <a href="#" class="card-link primary">
+                            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub
+                        </a>
+                        <a href="#" class="card-link secondary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="portfolio-card" data-category="algo">
+                <div class="card-img-placeholder">🗺️</div>
+                <div class="card-body">
+                    <div class="card-tags">
+                        <span class="card-tag">C++</span>
+                        <span class="card-tag">Graph</span>
+                        <span class="card-tag">BFS/DFS</span>
+                    </div>
+                    <h3>Pathfinding Visualizer</h3>
+                    <p>Interactive grid-based pathfinding using BFS, DFS, and Dijkstra's algorithm. Visualizes the search process in real time.</p>
+                    <div class="card-links">
+                        <a href="#" class="card-link primary">
+                            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub
+                        </a>
+                        <a href="#" class="card-link secondary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="portfolio-card" data-category="web">
+                <div class="card-img-placeholder">📋</div>
+                <div class="card-body">
+                    <div class="card-tags">
+                        <span class="card-tag">HTML</span>
+                        <span class="card-tag">CSS</span>
+                        <span class="card-tag">JavaScript</span>
+                    </div>
+                    <h3>Task Manager App</h3>
+                    <p>A clean, responsive to-do list web app with drag-and-drop reordering, priority labels, due dates, and local storage persistence.</p>
+                    <div class="card-links">
+                        <a href="#" class="card-link primary">
+                            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub
+                        </a>
+                        <a href="#" class="card-link secondary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 <span>MD. Tarek Bepary</span>. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Header scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 30);
+        });
+
+        // Filter logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.portfolio-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    const match = filter === 'all' || card.dataset.category === filter;
+                    card.classList.toggle('hidden', !match);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
