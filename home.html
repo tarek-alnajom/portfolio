@@ -5,33 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Portfolio Website HTML CSS</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* SVG icons inside social circles */
+        .home-sci a svg {
+            position: relative;
+            z-index: 1;
+            display: block;
+            fill: #fff;
+            width: clamp(16px, 2vmin, 20px);
+            height: clamp(16px, 2vmin, 20px);
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio.</a>
 
         <nav class="navbar">
-            <!-- FIXED: --1 → --i -->
             <a href="#" style="--i:1;" class="active">Home</a>
             <a href="#" style="--i:2;">About</a>
             <a href="#" style="--i:3;">Skills</a>
-            <a href="#" style="--i:4;">Portfolio</a>   
+            <a href="#" style="--i:4;">Portfolio</a>
             <a href="#" style="--i:5;">Contact</a>
         </nav>
     </header>
 
     <section class="home">
         <div class="home-sci">
-            <!-- FIXED: removed extra </i> -->
-            <a href="https://www.facebook.com/alnajom.tarek">
-                <i class='bx bxl-facebook'></i>
+            <a href="https://www.facebook.com/alnajom.tarek" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
             </a>
-            <a href="https://x.com/alnajom">
-                <i class='bx bxl-twitter'></i>
+            <a href="https://x.com/alnajom" target="_blank" rel="noopener" aria-label="Twitter / X">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
             </a>
-            <a href="#">
-                <i class='bx bxl-linkedin'></i>
+            <a href="#" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+                    <circle cx="4" cy="4" r="2"/>
+                </svg>
             </a>
         </div>
 
@@ -41,13 +56,13 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <a href="#" class="btn">Hire Me</a>
         </div>
-        
+
         <div class="home-img">
             <div class="glowing-circle">
                 <span></span>
-                <span></span> 
+                <span></span>
                 <div class="image">
-                    <img src="images/img.png" alt="">
+                    <img src="images/img.png" alt="MD. Tarek Bepary">
                 </div>
             </div>
         </div>
